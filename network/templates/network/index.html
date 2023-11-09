@@ -1,0 +1,22 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div id="div_newpost"> 
+    <strong>New Post</strong>
+    <form id="newpost_form" action="{% url 'allpost' %}" method="post">
+        {% csrf_token %}
+        <textarea name="newpost" id="newpost_text" cols="70" rows="4"></textarea>
+       <input type="submit" class="submit">
+    </form>
+</div>
+{% endif %}
+<div id="profile_div"></div>
+</div>
+<div id="div_allpost">
+</div>
+<div id="singlepost"></div>
+
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'network/layout.html' %}
+
+{% block body %}
+<div id="profile"> 
+<h1>{{ username }}</h1>
+<table>
+    <tr>
+        <th>Folllowers</th>
+        <th>Followings</th>
+    </tr>
+    <tr>
+        <td>{{ no_followers }}</td>
+        <td>{{ no_followings }}</td>
+    </tr>
+</table>
+{% if username != current_user.username and user.is_authenticated %}
+{% if username in current_user.following %}
+<button class="follo" id="followed">Unfollow</button>
+{% else %}
+<button class="follo" id="notfollowed">Follow</button>
+{% endif %}
+{% endif %}
+</div>
+<div id="div_allpost"></div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'network/layout.html' %}
+
+
+{% block body %}
+<div id="div_allpost"></div>
+<a href="{% url 'user' username=post.username current_user=user.username %}"><h3 class="username">{{ post.username }}</h3></a>
+<p>
+    {{ post.post }}
+</p>
+{% if user.username in post.liked_by %}
+<button class="like_button" class="fa fa-thimbs-up" id="liked">{{ post.likes }}</button>
+{% else %}
+<button class="like_button" class="fa fa-thumbs-up" id="notliked">{{ post.likes }}</button>
+{% endif %}
+
+{% endblock %}

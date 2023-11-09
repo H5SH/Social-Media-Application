@@ -1,0 +1,82 @@
+#div_newpost{
+    padding: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-color: black;
+    border-style:outset;
+}
+
+.submit{
+    background-color: rgb(98, 98, 246);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+#liked{
+    width: auto;
+    height: auto;
+    background-color: rgb(98, 98, 246);
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+#notliked{
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    color:  rgb(98, 98, 246);
+    border-radius: 5px;
+}
+
+#profile_div{
+    margin-top: 15%;
+    text-align: center;
+}
+
+#profile > strong{
+    margin-top: 10%;
+    margin: 6%;
+}
+
+.displaypost {
+    padding: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-color: black;
+    border-style:double;
+}
+
+table{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    border: 1px solid;
+}
+tr{
+    text-align: center;
+}
+
+#followed{
+    margin-top: 2%;
+    width: 10%;
+    height: 40px;
+    background-color: aliceblue;
+    color:  rgb(98, 98, 246);
+    border-radius: 5px;
+}
+
+#notfollowed{
+    margin-top: 2%;
+    width: 10%;
+    height: 40px;
+    background-color: rgb(98, 98, 246);
+    color:aliceblue;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
